@@ -2,15 +2,15 @@ name: Flutter
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   check_commit_msg:
     outputs:
       commit_message: ${{ steps.get_message.outputs.message }}
-    name: Check if the workflow has been disabled.
+    name: Check if the workflow has been disabled
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,44 +19,49 @@ jobs:
         run: |
           echo "::set-output name=message::$(git log --format=%B -n 1 ${{ github.event.after }} | tr '\n' ' ')"
           echo "message=\"$(git log --format=%B -n 1 ${{ github.event.after }} | tr '\n' ' ')\"" >> $GITHUB_ENV
+
   build_apk:
     needs: check_commit_msg
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-java@v1
-      with:
-        java-version: '12.x'
-    - uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.7.12'
-    - run: dart --version
-    - run: flutter --version
-    - run: flutter pub get
-    - run: flutter build apk
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: sail.${{ github.sha }}.android
-        path: build/app/outputs/flutter-apk/app-release.apk
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.12'
+      - run: dart --version
+      - run: flutter --version
+      - run: flutter pub get
+      - run: flutter build apk
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: sail.${{ github.sha }}.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
 
   build_ios:
     needs: check_commit_msg
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-java@v1
-      with:
-        java-version: '12.x'
-    - uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.7.12'
-    - run: dart --version
-    - run: flutter --version
-    - run: flutter pub get
-    - run: flutter build ios --release --no-codesign
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: sail.${{ github.sha }}.ios
-        path: build/ios/iphoneos/Runner.app
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.12'
+      - run: dart --version
+      - run: flutter --version
+      - run: flutter pub get
+      - run: flutter build ios --release --no-codesign
+      - name: Create IPA
+        run: |
+          xcodebuild -workspace Runner.xcworkspace -scheme Runner -sdk iphoneos -configuration Release clean archive -archivePath build/ios/Runner.xcarchive CODE_SIGNING_ALLOWED=NO
+          xcodebuild -exportArchive -archivePath build/ios/Runner.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath build/ios/IPA
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: sail.${{ github.sha }}.ipa
+          path: build/ios/IPA

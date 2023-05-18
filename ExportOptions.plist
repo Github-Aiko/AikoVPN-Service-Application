@@ -1,0 +1,13 @@
+<plist version="1.0">
+<dict>
+    <key>method</key>
+    <string>app-store</string>
+    <key>compileBitcode</key>
+    <false/>
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>com.aikocute.tech</key>
+        <string>yourprovisioningprofile</string>
+    </dict>
+</dict>
+</plist>
