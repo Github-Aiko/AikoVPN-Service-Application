@@ -69,7 +69,7 @@ class ConnectionStatsState extends State<ConnectionStats> {
               Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
                 Icon(Icons.map,
                     color: AppColors.grayColor, size: 20),
-                Text("其他节点",
+                Text("Các nút khác",
                     style:
                     TextStyle(fontSize: 12, color: AppColors.grayColor)),
                 Icon(Icons.chevron_right, color: AppColors.grayColor, size: 20)
@@ -108,7 +108,7 @@ class ConnectionStatsState extends State<ConnectionStats> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        "下行速度",
+                        "Tốc độ Download",
                         style: TextStyle(
                             color: AppColors.grayColor,
                             fontWeight: FontWeight.w500),
@@ -160,7 +160,7 @@ class ConnectionStatsState extends State<ConnectionStats> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        "上行速度",
+                        "Tốc độ Upload",
                         style: TextStyle(
                             color: AppColors.grayColor,
                             fontWeight: FontWeight.w500),

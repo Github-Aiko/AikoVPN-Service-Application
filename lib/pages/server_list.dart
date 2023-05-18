@@ -63,7 +63,7 @@ class ServerListPageState extends State<ServerListPage> with AutomaticKeepAliveC
           child: Container(
             alignment: Alignment.center,
             child: Text(
-              '节点列表为空，请确认是否已经订阅',
+              'Danh sách nút trống, vui lòng xác nhận xem bạn đã đăng ký chưa',
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: ScreenUtil().setWidth(40),
@@ -85,12 +85,12 @@ class ServerListPageState extends State<ServerListPage> with AutomaticKeepAliveC
           children: [
             RichText(
                 text: TextSpan(
-                    text: '请选择 ',
+                    text: 'Xin vui lòng chọn',
                     style: Theme.of(context).textTheme.titleSmall?.copyWith(
                         fontWeight: FontWeight.w700, color: _appModel.isOn ? AppColors.grayColor : Colors.white),
                     children: [
                   TextSpan(
-                      text: '节点',
+                      text: 'Node',
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.normal, color: _appModel.isOn ? AppColors.grayColor : Colors.white))
                 ])),
@@ -202,7 +202,7 @@ class ServerListPageState extends State<ServerListPage> with AutomaticKeepAliveC
                       padding: EdgeInsets.only(right: ScreenUtil().setWidth(10)),
                       child: Text(
                         _serverModel.serverEntityList[index].ping!.inSeconds > 10
-                            ? '超时'
+                            ? 'Hết thời gian'
                             : "${_serverModel.serverEntityList[index].ping!.inMilliseconds}ms",
                         style: TextStyle(
                             color: _serverModel.serverEntityList[index].ping!.inSeconds > 10

@@ -54,7 +54,7 @@ class MyProfileState extends State<MyProfile> {
                   children: <Widget>[
                     ProfileWidget(
                       avatar: _userModel.userEntity?.avatarUrl,
-                      userName: _userModel.userEntity?.email ?? "欢迎光临",
+                      userName: _userModel.userEntity?.email ?? "Chào mừng",
                       onTap: onLogoutTap,
                     ),
                     Container(
@@ -118,12 +118,12 @@ class AccountWidget extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(bottom: 16),
             child: InkWell(
-              onTap: () => onWebLinkTap("个人中心", '/profile'),
+              onTap: () => onWebLinkTap("Trung tâm cá nhân", '/profile'),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
-                    "🙍 个人中心",
+                    "🙍 Trung tâm cá nhân",
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -136,12 +136,12 @@ class AccountWidget extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(bottom: 16),
             child: InkWell(
-              onTap: () => onWebLinkTap("我的工单", "/ticket"),
+              onTap: () => onWebLinkTap("Ticket của tôi", "/ticket"),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
-                    "🎫 我的工单",
+                    "🎫 Ticket của tôi",
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -154,12 +154,12 @@ class AccountWidget extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(bottom: 16),
             child: InkWell(
-              onTap: () => onWebLinkTap("流量明细", "traffic"),
+              onTap: () => onWebLinkTap("Chi tiết dung lượng", "traffic"),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
-                    "🔖 流量明细",
+                    "🔖 Chi tiết dung lượng",
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -193,7 +193,7 @@ class FinanceWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 Text(
-                  "财务",
+                  "Tài chính",
                   style: TextStyle(
                     color: Color(0xFFADADAD),
                     fontSize: 20,
@@ -206,12 +206,12 @@ class FinanceWidget extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(bottom: 16),
             child: InkWell(
-              onTap: () => onWebLinkTap("我的订单", "/order"),
+              onTap: () => onWebLinkTap("Đặt Hàng", "/order"),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
-                    "💳 我的订单",
+                    "💳 Đơn hàng của tôi",
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -224,12 +224,12 @@ class FinanceWidget extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(bottom: 16),
             child: InkWell(
-              onTap: () => onWebLinkTap("我的邀请", "/invite"),
+              onTap: () => onWebLinkTap("Lời mời của tôi", "/invite"),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
-                    "🫲 我的邀请",
+                    "🗳 Lời mời của tôi",
                     style: TextStyle(
                       fontSize: 18,
                     ),

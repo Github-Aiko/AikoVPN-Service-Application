@@ -40,9 +40,9 @@ class AppModel extends BaseModel {
 
   final Map _tabMap = {
     0: AppStrings.appName,
-    1: '套餐',
-    2: '节点',
-    3: '我的',
+    1: 'Combo',
+    2: 'Node',
+    3: 'mine',
   };
 
   void jumpToPage(int page) {
@@ -77,7 +77,7 @@ class AppModel extends BaseModel {
   void togglePowerButton() async {
     if (vpnStatus == VpnStatus.connecting) {
       Fluttertoast.showToast(
-          msg: "正在连接中，请稍后...",
+          msg: "Connecting, please wait...",
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.CENTER,
           timeInSecForIosWeb: 2,
@@ -88,7 +88,7 @@ class AppModel extends BaseModel {
 
     if (vpnStatus == VpnStatus.disconnecting) {
       Fluttertoast.showToast(
-          msg: "正在断开中，请稍后...",
+          msg: "Disconnecting, please wait...",
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.CENTER,
           timeInSecForIosWeb: 2,

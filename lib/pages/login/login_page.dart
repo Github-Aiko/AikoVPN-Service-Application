@@ -22,17 +22,17 @@ class LoginPageState extends State<LoginPage> {
 
   static String? _emailValidator(value) {
     if (value.isEmpty || !RegExp(r'^[^\s@]+@[^\s@]+\.[^\s@]+$').hasMatch(value)) {
-      return '请输入正确邮箱!';
+      return 'Vui lòng nhập địa chỉ email chính xác!';
     }
     return null;
   }
 
   static String? _passwordValidator(String? value) {
     if (value?.isEmpty == true) {
-      return '密码不能为空!';
+      return 'Vui lòng nhập địa chỉ email chính xác!';
     }
     if (value?.length == null || value!.length < 6) {
-      return '密码不能小于6位';
+      return 'Mật khẩu không được ít hơn 6 ký tự';
     }
     return null;
   }
@@ -43,7 +43,7 @@ class LoginPageState extends State<LoginPage> {
     try {
       await _loginModel.login(data.name, data.password);
     } catch (error) {
-      result = '登陆失败，请重试';
+      result = 'Đăng nhập thất bại. Xin hãy thử lại';
     }
 
     return result;
@@ -57,7 +57,7 @@ class LoginPageState extends State<LoginPage> {
 
       await _loginModel.login(data.name, data.password);
     } catch (error) {
-      result = '注册失败，请重试';
+      result = 'Đăng ký không thành công, vui lòng thử lại';
     }
 
     return result;
@@ -79,18 +79,18 @@ class LoginPageState extends State<LoginPage> {
       onLogin: _login,
       onSignup: _register,
       messages: LoginMessages(
-          userHint: '邮箱',
-          passwordHint: '密码',
-          confirmPasswordHint: '确认密码',
-          confirmPasswordError: '两次密码不匹配',
-          forgotPasswordButton: '忘记密码？',
-          loginButton: '登陆',
-          signupButton: '注册',
-          recoverPasswordIntro: '重置密码',
-          recoverPasswordButton: '确定',
-          recoverPasswordDescription: '系统将向您的邮箱发送一封重置密码邮件，请注意查收',
-          recoverPasswordSuccess: '发送成功',
-          goBackButton: '返回'),
+          userHint: 'Mail',
+          passwordHint: 'Mật Khẩu',
+          confirmPasswordHint: 'Xác nhận mật khẩu',
+          confirmPasswordError: 'Hai mật khẩu không khớp',
+          forgotPasswordButton: 'Quên mật khẩu?',
+          loginButton: 'Đăng Nhập',
+          signupButton: 'Đăng Kí',
+          recoverPasswordIntro: 'Đặt lại mật khẩu',
+          recoverPasswordButton: 'Chắc chắn',
+          recoverPasswordDescription: 'Hệ thống sẽ gửi email đặt lại mật khẩu vào hòm thư của bạn, hãy chú ý kiểm tra nhé',
+          recoverPasswordSuccess: 'Gửi thành công',
+          goBackButton: 'Trở lại'),
       onSubmitAnimationCompleted: () {
         NavigatorUtil.goHomePage(context);
       },

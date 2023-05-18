@@ -17,7 +17,7 @@ class HttpUtil {
     );
     dio = Dio(options);
     dio.interceptors.add(InterceptorsWrapper(onRequest: (options, handler) async {
-      print("========================请求数据===================");
+      print("========================Yêu cầu dữ liệu===================");
       print("url=${options.uri.toString()}");
       print("headers=${options.headers}");
       print("params=${options.data}");
@@ -40,7 +40,7 @@ class HttpUtil {
 
       return handler.next(options);
     }, onResponse: (response, handler) {
-      print("========================请求数据===================");
+      print("========================Yêu cầu dữ liệu===================");
       print("code=${response.statusCode}");
 
       if (response.statusCode! < 200 || response.statusCode! >= 300) {
@@ -54,7 +54,7 @@ class HttpUtil {
 
       return handler.next(response);
     }, onError: (error, handler) {
-      print("========================请求错误===================");
+      print("========================Yêu cầu sai===================");
       print("message =${error.message}");
       print("code=${error.response?.statusCode}");
 

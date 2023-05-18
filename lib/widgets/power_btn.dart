@@ -30,7 +30,7 @@ class PowerButtonState extends State<PowerButton> {
   Future<void> pressConnectBtn() async {
     if (_serverModel.selectServerEntity == null) {
       Fluttertoast.showToast(
-          msg: "请选择服务器节点",
+          msg: "Vui lòng chọn một nút máy chủ",
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.CENTER,
           timeInSecForIosWeb: 2,
