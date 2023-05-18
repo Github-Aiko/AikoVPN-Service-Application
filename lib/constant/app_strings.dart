@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String appName = '云中漫步';
+  static const String appName = 'AikoVPN Service';
   static const String token = 'token';
   static const String authData = 'auth_data';
   static const String userInfo = 'USER_INFO';
@@ -9,6 +9,6 @@ class AppStrings {
   static const String selectServerIndex = 'SELECT_SERVER_INDEX';
   static const String selectServerNode = 'SELECT_SERVER_NODE';
   static const String isFirstOpen = "IS_FIRST_OPEN";
-  static const String openDoor = '开启加速服务';
-  static const String crispWebsiteId = 'a7bd3dc0-6bab-4f12-b9ac-e1997a97f4ca';
+  static const String openDoor = 'Bật dịch vụ tăng tốc';
+  static const String crispWebsiteId = '94fbc155-4831-487a-ab32-148302e2ada6';
 }

@@ -105,7 +105,7 @@ class AccountWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 Text(
-                  "账户",
+                  "Tài khoản",
                   style: TextStyle(
                     color: Color(0xFFADADAD),
                     fontSize: 20,

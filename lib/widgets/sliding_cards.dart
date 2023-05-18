@@ -8,6 +8,8 @@ import 'package:sail/models/user_model.dart';
 import 'package:sail/service/plan_service.dart';
 import 'package:sail/service/user_service.dart';
 import 'package:sail/utils/navigator_util.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/number_symbols.dart';
 
 class SlidingCardsView extends StatefulWidget {
   const SlidingCardsView({Key? key}) : super(key: key);
@@ -236,7 +238,7 @@ class CardContentState extends State<CardContent> {
               Transform.translate(
                 offset: Offset(32 * widget.offset, 0),
                 child: Text(
-                    'VND ${widget.lowestPrice} (bắt đầu từ)',
+                  '${NumberFormat.decimalPattern('vi').format(widget.lowestPrice)} VNĐ',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
