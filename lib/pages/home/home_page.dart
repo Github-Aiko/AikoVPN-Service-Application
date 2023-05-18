@@ -4,20 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/constant/app_dimens.dart';
-import 'package:sail/models/app_model.dart';
-import 'package:sail/models/plan_model.dart';
-import 'package:sail/models/server_model.dart';
-import 'package:sail/models/user_model.dart';
-import 'package:sail/models/user_subscribe_model.dart';
-import 'package:sail/pages/my_profile.dart';
-import 'package:sail/pages/plan/plan_page.dart';
-import 'package:sail/pages/server_list.dart';
-import 'package:sail/widgets/home_widget.dart';
-import 'package:sail/widgets/power_btn.dart';
-import 'package:sail/widgets/sail_app_bar.dart';
-import 'package:sail/utils/common_util.dart';
+import 'package:aiko/constant/app_colors.dart';
+import 'package:aiko/constant/app_dimens.dart';
+import 'package:aiko/models/app_model.dart';
+import 'package:aiko/models/plan_model.dart';
+import 'package:aiko/models/server_model.dart';
+import 'package:aiko/models/user_model.dart';
+import 'package:aiko/models/user_subscribe_model.dart';
+import 'package:aiko/pages/my_profile.dart';
+import 'package:aiko/pages/plan/plan_page.dart';
+import 'package:aiko/pages/server_list.dart';
+import 'package:aiko/widgets/home_widget.dart';
+import 'package:aiko/widgets/power_btn.dart';
+import 'package:aiko/widgets/aiko_app_bar.dart';
+import 'package:aiko/utils/common_util.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -100,7 +100,7 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
     return AnnotatedRegion<SystemUiOverlayStyle>(
         value: _appModel.isOn ? SystemUiOverlayStyle.dark : SystemUiOverlayStyle.light,
         child: Scaffold(
-            appBar: SailAppBar(
+            appBar: aikoAppBar(
               appTitle: _appModel.appTitle,
             ),
             extendBody: true,

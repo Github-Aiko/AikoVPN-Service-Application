@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/models/app_model.dart';
+import 'package:aiko/constant/app_colors.dart';
+import 'package:aiko/models/app_model.dart';
 
-class SailAppBar extends AppBar {
-  SailAppBar({Key? key, required this.appTitle})
+class aikoAppBar extends AppBar {
+  aikoAppBar({Key? key, required this.appTitle})
       : super(key: key);
 
   final String appTitle;
 
   @override
-  SailAppBarState createState() => SailAppBarState();
+  aikoAppBarState createState() => aikoAppBarState();
 }
 
-class SailAppBarState extends State<SailAppBar> {
+class aikoAppBarState extends State<aikoAppBar> {
   late AppModel _appModel;
 
   @override

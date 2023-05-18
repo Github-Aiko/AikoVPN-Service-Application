@@ -1,11 +1,11 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/models/app_model.dart';
-import 'package:sail/models/server_model.dart';
+import 'package:aiko/constant/app_colors.dart';
+import 'package:aiko/models/app_model.dart';
+import 'package:aiko/models/server_model.dart';
 import 'package:flutter/material.dart';
-import 'package:sail/utils/common_util.dart';
+import 'package:aiko/utils/common_util.dart';
 
 class ServerListPage extends StatefulWidget {
   const ServerListPage({Key? key}) : super(key: key);
@@ -90,7 +90,7 @@ class ServerListPageState extends State<ServerListPage> with AutomaticKeepAliveC
                         fontWeight: FontWeight.w700, color: _appModel.isOn ? AppColors.grayColor : Colors.white),
                     children: [
                   TextSpan(
-                      text: 'Node',
+                      text: 'Nút',
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.normal, color: _appModel.isOn ? AppColors.grayColor : Colors.white))
                 ])),

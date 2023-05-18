@@ -3,11 +3,11 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/entity/plan_entity.dart';
-import 'package:sail/models/user_model.dart';
-import 'package:sail/service/plan_service.dart';
-import 'package:sail/service/user_service.dart';
-import 'package:sail/utils/navigator_util.dart';
+import 'package:aiko/entity/plan_entity.dart';
+import 'package:aiko/models/user_model.dart';
+import 'package:aiko/service/plan_service.dart';
+import 'package:aiko/service/user_service.dart';
+import 'package:aiko/utils/navigator_util.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/number_symbols.dart';
 

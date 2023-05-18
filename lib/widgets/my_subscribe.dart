@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/entity/user_subscribe_entity.dart';
-import 'package:sail/models/app_model.dart';
-import 'package:sail/utils/transfer_util.dart';
+import 'package:aiko/constant/app_colors.dart';
+import 'package:aiko/entity/user_subscribe_entity.dart';
+import 'package:aiko/models/app_model.dart';
+import 'package:aiko/utils/transfer_util.dart';
 
 class MySubscribe extends StatefulWidget {
   const MySubscribe({Key? key, required this.isLogin, required this.isOn, required this.userSubscribeEntity})
@@ -168,7 +168,7 @@ class MySubscribeState extends State<MySubscribe> {
                           ),
                         ),
                         Text(
-                          '已用 ${TransferUtil().toHumanReadable(widget.userSubscribeEntity!.u + widget.userSubscribeEntity!.d)} / 总计 ${TransferUtil().toHumanReadable(widget.userSubscribeEntity!.transferEnable)}',
+                          'Used: ${TransferUtil().toHumanReadable(widget.userSubscribeEntity!.u + widget.userSubscribeEntity!.d)} / Total: ${TransferUtil().toHumanReadable(widget.userSubscribeEntity!.transferEnable)}',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: ScreenUtil().setSp(26),

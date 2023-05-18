@@ -1,6 +1,6 @@
-import 'package:sail/constant/app_urls.dart';
-import 'package:sail/entity/server_entity.dart';
-import 'package:sail/utils/http_util.dart';
+import 'package:aiko/constant/app_urls.dart';
+import 'package:aiko/entity/server_entity.dart';
+import 'package:aiko/utils/http_util.dart';
 
 class ServerService {
   Future<List<ServerEntity>> server() {

@@ -1,8 +1,8 @@
-import 'package:sail/constant/app_urls.dart';
-import 'package:sail/entity/login_entity.dart';
-import 'package:sail/entity/user_entity.dart';
-import 'package:sail/entity/user_subscribe_entity.dart';
-import 'package:sail/utils/http_util.dart';
+import 'package:aiko/constant/app_urls.dart';
+import 'package:aiko/entity/login_entity.dart';
+import 'package:aiko/entity/user_entity.dart';
+import 'package:aiko/entity/user_subscribe_entity.dart';
+import 'package:aiko/utils/http_util.dart';
 
 class UserService {
   Future<LoginEntity>? login(Map<String, dynamic> parameters) {

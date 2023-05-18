@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:sail/constant/app_strings.dart';
-import 'package:sail/router/application.dart';
-import 'package:sail/router/routers.dart';
-import 'package:sail/utils/common_util.dart';
-import 'package:sail/utils/shared_preferences_util.dart';
+import 'package:aiko/constant/app_strings.dart';
+import 'package:aiko/router/application.dart';
+import 'package:aiko/router/routers.dart';
+import 'package:aiko/utils/common_util.dart';
+import 'package:aiko/utils/shared_preferences_util.dart';
 
 class HttpUtil {
   static HttpUtil get instance => _httpUtil;

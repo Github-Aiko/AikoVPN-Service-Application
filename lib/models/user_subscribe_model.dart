@@ -1,8 +1,8 @@
-import 'package:sail/constant/app_strings.dart';
-import 'package:sail/entity/user_subscribe_entity.dart';
-import 'package:sail/models/base_model.dart';
-import 'package:sail/service/user_service.dart';
-import 'package:sail/utils/shared_preferences_util.dart';
+import 'package:aiko/constant/app_strings.dart';
+import 'package:aiko/entity/user_subscribe_entity.dart';
+import 'package:aiko/models/base_model.dart';
+import 'package:aiko/service/user_service.dart';
+import 'package:aiko/utils/shared_preferences_util.dart';
 
 class UserSubscribeModel extends BaseModel {
   UserSubscribeEntity? _userSubscribeEntity;

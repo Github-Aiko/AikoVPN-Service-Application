@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/models/server_model.dart';
-import 'package:sail/models/user_model.dart';
-import 'package:sail/utils/navigator_util.dart';
+import 'package:aiko/constant/app_colors.dart';
+import 'package:aiko/models/server_model.dart';
+import 'package:aiko/models/user_model.dart';
+import 'package:aiko/utils/navigator_util.dart';
 
 class SelectLocation extends StatefulWidget {
   const SelectLocation({
@@ -53,7 +53,7 @@ class SelectLocationState extends State<SelectLocation> {
             padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
             child: Row(
               children: [
-                const Icon(Icons.sailing),
+                const Icon(Icons.aikoing),
                 Padding(padding: EdgeInsets.only(left: ScreenUtil().setWidth(10))),
                 Text(
                   _serverModel.selectServerEntity?.name ?? "Chọn nút kết nối",

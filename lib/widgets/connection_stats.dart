@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/models/app_model.dart';
-import 'package:sail/models/user_model.dart';
-import 'package:sail/utils/navigator_util.dart';
+import 'package:aiko/constant/app_colors.dart';
+import 'package:aiko/models/app_model.dart';
+import 'package:aiko/models/user_model.dart';
+import 'package:aiko/utils/navigator_util.dart';
 
 class ConnectionStats extends StatefulWidget {
   const ConnectionStats({Key? key}) : super(key: key);
