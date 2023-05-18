@@ -1,6 +1,6 @@
 class AppUrls {
-  static const String baseUrl = 'https://user.51mdss.com'; // 基础接口地址
-  static const String baseApiUrl = '$baseUrl/api/v1'; // 基础接口地址
+  static const String baseUrl = 'https://aikocute.click';
+  static const String baseApiUrl = '$baseUrl/api/v1'; 
 
   static const String login = '$baseApiUrl/passport/auth/login';
   static const String register = '$baseApiUrl/passport/auth/register';
