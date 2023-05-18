@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
 
-            .build()
 @SuppressLint("Registered")
 class DeviceStorageApp(context: Context) : Application() {
     init {
