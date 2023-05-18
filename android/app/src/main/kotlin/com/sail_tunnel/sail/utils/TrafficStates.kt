@@ -1,4 +1,4 @@
-package com.sail_tunnel.sail.utils
+package com.aikocute.aikovpn.utils
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

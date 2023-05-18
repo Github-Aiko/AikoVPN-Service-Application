@@ -1,4 +1,4 @@
-package com.sail_tunnel.sail.net
+package com.aikocute.aikovpn.net
 
 import android.net.LocalSocket
 import kotlinx.coroutines.*

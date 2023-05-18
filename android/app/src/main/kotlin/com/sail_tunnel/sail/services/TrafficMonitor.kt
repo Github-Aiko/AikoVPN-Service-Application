@@ -1,9 +1,9 @@
-package com.sail_tunnel.sail.services
+package com.aikocute.aikovpn.services
 
 import android.net.LocalSocket
 import android.os.SystemClock
-import com.sail_tunnel.sail.net.LocalSocketListener
-import com.sail_tunnel.sail.utils.TrafficStats
+import com.aikocute.aikovpn.net.LocalSocketListener
+import com.aikocute.aikovpn.utils.TrafficStats
 import java.io.File
 import java.io.IOException
 import java.nio.ByteBuffer

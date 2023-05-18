@@ -1,11 +1,11 @@
-package com.sail_tunnel.sail.services
+package com.aikocute.aikovpn.services
 
 import android.net.LocalServerSocket
 import android.net.LocalSocket
 import android.net.LocalSocketAddress
 import android.system.Os
-import com.sail_tunnel.sail.Core
-import com.sail_tunnel.sail.TunnelService
+import com.aikocute.aikovpn.Core
+import com.aikocute.aikovpn.TunnelService
 import kotlinx.coroutines.CoroutineScope
 import timber.log.Timber
 import java.io.File

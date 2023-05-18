@@ -1,4 +1,4 @@
-package com.sail_tunnel.sail.services
+package com.aikocute.aikovpn.services
 
 import kotlinx.coroutines.Job
 

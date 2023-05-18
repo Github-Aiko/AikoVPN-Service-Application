@@ -1,4 +1,4 @@
-package com.sail_tunnel.sail.utils
+package com.aikocute.aikovpn.utils
 
 import android.annotation.SuppressLint
 import android.app.Application

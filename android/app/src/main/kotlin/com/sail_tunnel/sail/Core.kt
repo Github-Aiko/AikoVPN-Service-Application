@@ -1,4 +1,4 @@
-package com.sail_tunnel.sail
+package com.aikocute.aikovpn
 
 import android.app.*
 import android.content.*
@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 import timber.log.Timber
 import kotlin.reflect.KClass
 import androidx.work.Configuration
-import com.sail_tunnel.sail.utils.DeviceStorageApp
+import com.aikocute.aikovpn.utils.DeviceStorageApp
 
 object Core : Configuration.Provider {
     lateinit var app: MainActivity

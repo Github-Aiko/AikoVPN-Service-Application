@@ -1,16 +1,16 @@
-package com.sail_tunnel.sail
+package com.aikocute.aikovpn
 
 import android.app.Service
 import android.content.Intent
 import android.net.*
 import android.os.Build
 import android.os.ParcelFileDescriptor
-import com.sail_tunnel.sail.net.DefaultNetworkListener
-import com.sail_tunnel.sail.net.DnsResolverCompat
-import com.sail_tunnel.sail.services.VpnState
-import com.sail_tunnel.sail.services.LocalDnsWorker
-import com.sail_tunnel.sail.services.TunnelInstance
-import com.sail_tunnel.sail.utils.readableMessage
+import com.aikocute.aikovpn.net.DefaultNetworkListener
+import com.aikocute.aikovpn.net.DnsResolverCompat
+import com.aikocute.aikovpn.services.VpnState
+import com.aikocute.aikovpn.services.LocalDnsWorker
+import com.aikocute.aikovpn.services.TunnelInstance
+import com.aikocute.aikovpn.utils.readableMessage
 import kotlinx.coroutines.*
 import java.io.File
 import java.io.IOException

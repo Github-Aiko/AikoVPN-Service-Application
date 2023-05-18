@@ -1,12 +1,12 @@
-package com.sail_tunnel.sail.services
+package com.aikocute.aikovpn.services
 
 import android.net.LocalSocket
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.sail_tunnel.sail.Core
-import com.sail_tunnel.sail.net.ConcurrentLocalSocketListener
-import com.sail_tunnel.sail.net.DnsResolverCompat
-import com.sail_tunnel.sail.utils.readableMessage
+import com.aikocute.aikovpn.Core
+import com.aikocute.aikovpn.net.ConcurrentLocalSocketListener
+import com.aikocute.aikovpn.net.DnsResolverCompat
+import com.aikocute.aikovpn.utils.readableMessage
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.TimeoutCancellationException

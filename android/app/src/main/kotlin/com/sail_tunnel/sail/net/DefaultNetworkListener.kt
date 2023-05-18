@@ -1,4 +1,4 @@
-package com.sail_tunnel.sail.net
+package com.aikocute.aikovpn.net
 
 import android.annotation.TargetApi
 import android.net.ConnectivityManager
@@ -9,7 +9,7 @@ import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import androidx.annotation.RequiresApi
-import com.sail_tunnel.sail.Core
+import com.aikocute.aikovpn.Core
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

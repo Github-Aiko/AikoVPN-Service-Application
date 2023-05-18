@@ -1,18 +1,18 @@
-package com.sail_tunnel.sail
+package com.aikocute.aikovpn
 
 import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.net.VpnService
 import android.os.Bundle
-import com.sail_tunnel.sail.services.VpnState
+import com.aikocute.aikovpn.services.VpnState
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 import java.io.File
 
 class MainActivity: FlutterActivity() {
-    private val channel = "com.sail_tunnel.sail/vpn_manager"
+    private val channel = "com.aikocute.aikovpn/vpn_manager"
 
     private fun getServiceIntent(): Intent {
         return Intent(this, TunnelService::class.java)
