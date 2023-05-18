@@ -41,14 +41,3 @@ post_install do |installer|
     flutter_additional_ios_build_settings(target)
   end
 end
-
-platform :ios do
-  desc "Build the app"
-  lane :build do
-    gym(
-      scheme: "YourScheme",
-      export_method: "app-store",
-      clean: true
-    ) 
-  end
-end
