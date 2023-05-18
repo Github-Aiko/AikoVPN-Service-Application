@@ -2,12 +2,12 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_icmp_ping/flutter_icmp_ping.dart';
-import 'package:aiko/constant/app_strings.dart';
-import 'package:aiko/entity/server_entity.dart';
-import 'package:aiko/models/base_model.dart';
-import 'package:aiko/service/server_service.dart';
-import 'package:aiko/utils/shared_preferences_util.dart';
-import 'package:aiko/utils/common_util.dart';
+import 'package:sail/constant/app_strings.dart';
+import 'package:sail/entity/server_entity.dart';
+import 'package:sail/models/base_model.dart';
+import 'package:sail/service/server_service.dart';
+import 'package:sail/utils/shared_preferences_util.dart';
+import 'package:sail/utils/common_util.dart';
 
 enum PingType { ping, tcp }
 

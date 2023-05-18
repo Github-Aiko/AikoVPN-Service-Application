@@ -1,6 +1,6 @@
-import 'package:aiko/entity/plan_entity.dart';
-import 'package:aiko/models/base_model.dart';
-import 'package:aiko/service/plan_service.dart';
+import 'package:sail/entity/plan_entity.dart';
+import 'package:sail/models/base_model.dart';
+import 'package:sail/service/plan_service.dart';
 
 class PlanModel extends BaseModel {
   final PlanService _planService = PlanService();

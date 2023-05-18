@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:aiko/adapters/leaf_ffi/config.dart';
-import 'package:aiko/channels/vpn_manager.dart';
-import 'package:aiko/constant/app_colors.dart';
-import 'package:aiko/constant/app_strings.dart';
-import 'package:aiko/models/base_model.dart';
-import 'package:aiko/models/server_model.dart';
-import 'package:aiko/models/user_model.dart';
-import 'package:aiko/utils/common_util.dart';
+import 'package:sail/adapters/leaf_ffi/config.dart';
+import 'package:sail/channels/vpn_manager.dart';
+import 'package:sail/constant/app_colors.dart';
+import 'package:sail/constant/app_strings.dart';
+import 'package:sail/models/base_model.dart';
+import 'package:sail/models/server_model.dart';
+import 'package:sail/models/user_model.dart';
+import 'package:sail/utils/common_util.dart';
 
 class AppModel extends BaseModel {
   VpnManager vpnManager = VpnManager();
@@ -41,7 +41,7 @@ class AppModel extends BaseModel {
   final Map _tabMap = {
     0: AppStrings.appName,
     1: 'Combo',
-    2: 'Nút',
+    2: 'Node',
     3: 'mine',
   };
 

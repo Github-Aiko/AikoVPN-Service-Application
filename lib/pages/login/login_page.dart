@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:provider/provider.dart';
-import 'package:aiko/models/login_model.dart';
-import 'package:aiko/models/user_model.dart';
-import 'package:aiko/service/user_service.dart';
-import 'package:aiko/utils/navigator_util.dart';
-import 'package:aiko/constant/app_strings.dart';
+import 'package:sail/models/login_model.dart';
+import 'package:sail/models/user_model.dart';
+import 'package:sail/service/user_service.dart';
+import 'package:sail/utils/navigator_util.dart';
+import 'package:sail/constant/app_strings.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

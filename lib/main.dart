@@ -2,16 +2,16 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as services;
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:aiko/constant/app_colors.dart';
-import 'package:aiko/constant/app_strings.dart';
+import 'package:sail/constant/app_colors.dart';
+import 'package:sail/constant/app_strings.dart';
 import 'package:provider/provider.dart';
-import 'package:aiko/models/app_model.dart';
-import 'package:aiko/models/plan_model.dart';
-import 'package:aiko/models/server_model.dart';
-import 'package:aiko/models/user_subscribe_model.dart';
-import 'package:aiko/router/application.dart';
-import 'package:aiko/router/routers.dart';
-import 'package:aiko/models/user_model.dart';
+import 'package:sail/models/app_model.dart';
+import 'package:sail/models/plan_model.dart';
+import 'package:sail/models/server_model.dart';
+import 'package:sail/models/user_subscribe_model.dart';
+import 'package:sail/router/application.dart';
+import 'package:sail/router/routers.dart';
+import 'package:sail/models/user_model.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
@@ -31,11 +31,11 @@ void main() async {
     ChangeNotifierProvider<UserSubscribeModel>.value(value: userSubscribeModel),
     ChangeNotifierProvider<ServerModel>.value(value: serverModel),
     ChangeNotifierProvider<PlanModel>.value(value: planModel)
-  ], child: aikoApp()));
+  ], child: SailApp()));
 }
 
-class aikoApp extends StatelessWidget {
-  aikoApp({Key? key}) : super(key: key) {
+class SailApp extends StatelessWidget {
+  SailApp({Key? key}) : super(key: key) {
     final router = FluroRouter();
     Routers.configureRoutes(router);
     Application.router = router;

@@ -1,4 +1,4 @@
-import 'package:aiko/widgets/sliding_cards.dart';
+import 'package:sail/widgets/sliding_cards.dart';
 import 'package:flutter/material.dart';
 
 class PlanPage extends StatelessWidget {

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:aiko/constant/app_colors.dart';
-import 'package:aiko/models/app_model.dart';
-import 'package:aiko/models/plan_model.dart';
-import 'package:aiko/models/user_model.dart';
-import 'package:aiko/models/user_subscribe_model.dart';
-import 'package:aiko/widgets/bottom_block.dart';
-import 'package:aiko/widgets/connection_stats.dart';
-import 'package:aiko/widgets/logo_bar.dart';
-import 'package:aiko/widgets/my_subscribe.dart';
-import 'package:aiko/widgets/plan_list.dart';
-import 'package:aiko/widgets/select_location.dart';
-import 'package:aiko/utils/common_util.dart';
+import 'package:sail/constant/app_colors.dart';
+import 'package:sail/models/app_model.dart';
+import 'package:sail/models/plan_model.dart';
+import 'package:sail/models/user_model.dart';
+import 'package:sail/models/user_subscribe_model.dart';
+import 'package:sail/widgets/bottom_block.dart';
+import 'package:sail/widgets/connection_stats.dart';
+import 'package:sail/widgets/logo_bar.dart';
+import 'package:sail/widgets/my_subscribe.dart';
+import 'package:sail/widgets/plan_list.dart';
+import 'package:sail/widgets/select_location.dart';
+import 'package:sail/utils/common_util.dart';
 
 class HomeWidget extends StatefulWidget {
   const HomeWidget({Key? key}) : super(key: key);

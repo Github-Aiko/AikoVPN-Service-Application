@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
 
     <application
-            android:label="aiko"
+            android:label="sail"
             android:name="${applicationName}"
             android:icon="@mipmap/ic_launcher">
 
